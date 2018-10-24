@@ -1,0 +1,178 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,700");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: Roboto, sans-serif;
+  color: #343434; }
+
+.img-responsive {
+  max-width: 100%; }
+
+.contenedor {
+  max-width: 1200px;
+  margin: auto; }
+
+#elemento1 .contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  #elemento1 .contenedor .form ion-icon {
+    position: relative;
+    top: 4px;
+    left: -3px; }
+  #elemento1 .contenedor .form input {
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px; }
+  #elemento1 .contenedor .logo img {
+    max-width: 150px; }
+  #elemento1 .contenedor .cart span {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    display: inline-block;
+    margin-left: 10px; }
+    #elemento1 .contenedor .cart span:last-child {
+      border: solid 1px #ccc;
+      padding: 5px;
+      border-radius: 3px; }
+  #elemento1 .contenedor .cart ion-icon {
+    font-size: 20px;
+    position: relative;
+    top: 4px; }
+
+#main-nav {
+  margin-top: 40px; }
+  #main-nav ul {
+    display: flex;
+    justify-content: center; }
+    #main-nav ul li {
+      margin: 0 30px; }
+      #main-nav ul li a {
+        text-decoration: none;
+        color: #343434; }
+      #main-nav ul li ion-icon {
+        position: relative;
+        top: 2px;
+        margin-left: 5px; }
+
+.divider {
+  margin: 30px auto; }
+  .divider hr {
+    border: none;
+    border-top: #999 solid 1px; }
+
+.contenido {
+  display: flex; }
+  .contenido nav {
+    flex: 2; }
+  .contenido main {
+    flex: 8; }
+
+#nav-aside h4 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #9a9a9a; }
+#nav-aside ul li {
+  padding: 15px 0; }
+  #nav-aside ul li ion-icon {
+    position: relative;
+    top: 3px; }
+#nav-aside ul.level1 {
+  color: #0077FF;
+  font-weight: 700; }
+  #nav-aside ul.level1 li:last-child {
+    color: #343434; }
+#nav-aside ul.level2 {
+  margin-left: 30px;
+  font-weight: 400;
+  color: #343434; }
+#nav-aside ul .fw {
+  text-transform: uppercase; }
+
+#main-header {
+  position: relative; }
+
+.texto {
+  position: absolute;
+  top: 0;
+  display: flex;
+  left: 0;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding-left: 100px;
+  box-sizing: border-box; }
+  .texto h3, .texto h4 {
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 15px 0;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.5); }
+  .texto h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 50px;
+    color: white;
+    letter-spacing: 2px;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.5); }
+    .texto h2.small {
+      font-size: 30px; }
+
+#catalogo1 {
+  display: flex;
+  margin: 40px -20px 0 -20px; }
+  #catalogo1 article {
+    position: relative;
+    flex: 1;
+    padding: 0 20px; }
+    #catalogo1 article .texto {
+      padding-left: 50px; }
+
+/*# sourceMappingURL=style.css.map */

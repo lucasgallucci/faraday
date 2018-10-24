@@ -1,0 +1,215 @@
+
+@import "reset";
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,700');
+
+$font-titles: 'Playfair Display', serif;
+$font-color: #343434;
+
+
+body{
+	font-family: Roboto, sans-serif;
+	color: $font-color;
+}
+
+.img-responsive{
+	max-width: 100%;
+}
+
+
+.contenedor{
+	max-width: 1200px;
+	margin: auto;
+}
+
+#elemento1{
+	.contenedor{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	
+		.form{
+
+			ion-icon{
+				position: relative;
+			    top: 4px;
+			    left: -3px;
+			}
+
+			input{
+				border: none;
+			    text-transform: uppercase;
+			    letter-spacing: 2px;
+			    font-size: 12px;
+			}
+		}
+		.logo{
+			img{
+				max-width: 150px;
+			}
+		}
+
+		.cart{
+			span{
+				text-transform: uppercase;
+			    letter-spacing: 2px;
+			    font-size: 12px;
+			    display: inline-block;
+			    margin-left: 10px;
+
+			    &:last-child{
+			    	border: solid 1px #ccc;
+				    padding: 5px;
+				    border-radius: 3px;
+			    }
+			}
+
+			ion-icon{
+		    	font-size: 20px;
+			    position: relative;
+			    top: 4px;
+		    }
+		}
+	}
+}
+
+
+#main-nav{
+	margin-top: 40px;
+	ul{
+		display: flex;
+		justify-content: center;
+		li{
+			margin: 0 30px;
+			a{
+				text-decoration: none;
+				color: $font-color;
+			}
+
+			ion-icon{
+				position: relative;
+				top: 2px;
+				margin-left: 5px;
+			}
+		}
+	}
+}
+
+
+.divider{
+	margin: 30px auto;
+	hr{
+		border: none;
+    	border-top: #999 solid 1px;
+	}
+}
+
+
+.contenido{
+	display: flex;
+
+	nav{
+		flex: 2;
+	}
+
+	main{
+		flex: 8;
+	}
+}
+
+#nav-aside{
+
+	h4{
+		text-transform: uppercase;
+		margin-bottom: 10px;
+		color: lighten($font-color, 40%);
+	}
+
+	ul{
+		li{
+			padding: 15px 0;
+			ion-icon{
+				position: relative;
+				top: 3px;
+			}
+		}
+		
+		&.level1{
+			color: #0077FF;
+			font-weight: 700;
+
+			li{
+				&:last-child{
+					color: $font-color;
+				}	
+			} 	
+		}
+
+		&.level2{
+			margin-left: 30px;
+			font-weight: 400;
+			color: $font-color;
+		}
+
+		.fw{
+			text-transform: uppercase;
+		}
+	}
+}
+
+#main-header{
+	position: relative;
+}
+
+.texto{
+	position: absolute;
+    top: 0;
+    display: flex;
+    left: 0;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding-left: 100px;
+    box-sizing: border-box;
+
+    h3, h4{
+    	color: white;
+    	letter-spacing: 2px;
+    	text-transform: uppercase;
+    	margin: 15px 0;
+    	text-shadow: 0 0 4px rgba(0,0,0,0.5);
+    }
+
+    h2{
+    	font-family: $font-titles;
+    	font-size: 50px;
+    	color: white;
+    	letter-spacing: 2px;
+    	text-shadow: 0 0 4px rgba(0,0,0,0.5);
+    	&.small{
+    		font-size: 30px;
+    	}
+    }
+}
+
+
+#catalogo1{
+	display: flex;
+	margin: 40px -20px 0 -20px;
+	article{
+		position: relative;
+		flex: 1;
+		padding: 0 20px;
+		.texto{
+			padding-left: 50px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
