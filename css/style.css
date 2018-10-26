@@ -175,4 +175,18 @@ body {
     #catalogo1 article .texto {
       padding-left: 50px; }
 
+#catalogo2 {
+  display: flex;
+  margin-top: 30px; }
+  #catalogo2 .anteojo {
+    flex: 1; }
+  #catalogo2 .texto-anteojo {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #catalogo2 .texto-anteojo h2 {
+      text-transform: uppercase;
+      color: steelblue;
+      margin-top: 10px; }
+
 /*# sourceMappingURL=style.css.map */
