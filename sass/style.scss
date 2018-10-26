@@ -207,7 +207,21 @@ body{
 }
 
 
+#elemento-merge{
+	.merge{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 692px;
+		
+		div{
+			margin: auto;
+		}
 
+		
+	
+	}
+}
 
 
 
