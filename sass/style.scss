@@ -6,6 +6,7 @@ $font-titles: 'Playfair Display', serif;
 $font-color: #343434;
 
 
+
 body{
 	font-family: Roboto, sans-serif;
 	color: $font-color;
@@ -224,9 +225,25 @@ body{
 	}
 }
 
+.separador{
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+	font-family: "Roboto";
+	font-size: 15px;
+	color: lighten($font-color,60%);
+	letter-spacing: 2px;
+}
+
 #catalogo2 {
 	display: flex;
-	margin-top: 30px;
+	margin-top: 50px;
+
+	
+
+
+
+	
 
 	.anteojo {
 		flex:1;
@@ -240,8 +257,110 @@ body{
 
 		h2 {
 			text-transform: uppercase;
-			color: steelblue;
-			margin-top: 10px;
+			color: lighten(steelblue, 20%);
+			margin-top: 20px;
+			letter-spacing: 2px;
+			font-size: 12px;
+
+		}
+		h3{
+			margin-top: 20px;
+			font-weight: bold;
+			font-family: "roboto 300";
+
+
+		}
+
+		h4{
+			margin-top: 20px;
+			color: lighten(black, 60%);
+		}
+		
+
+	}
+
+
+}
+
+#descripcion{
+	display: flex;
+	margin-top: 40px;
+
+	article{
+		flex: 1;
+		
+
+		h2{
+			margin-top: 50px;
+			font-weight: bold;
+			font-size: 20px;
+			font-family: $font-titles;
+			letter-spacing: 2px;
+
+
+
+
+		}
+
+		p{
+			margin-top: 30px;
+			line-height: 150%;
+			color: lighten(black, 60%);
+
 		}
 	}
+
+	div{
+		flex: 1;
+		margin-top: 30px;
+
+		img{
+			margin-left: 10px;
+		}
+
+
+	}
+
 }
+
+#imagen-nena{
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+	margin-top: 60px;
+	margin-bottom: 15px;
+
+	div{
+	position: absolute;	
+
+	h3{
+		color: darken(white, 10%);
+		opacity: 0.8;
+		font-size: 20px;
+		font-family: "roboto";
+		letter-spacing: 3px;
+	}
+
+	h2{
+		color: white;
+		font-size: 40px;
+		margin-top: 30px;
+		font-weight: bold;
+		font-family: "roboto 700"
+
+	}
+
+	h4{
+		color: darken(white, 10%);
+		opacity: 0.8;
+		font-size: 20px;
+		font-family: "roboto";
+		letter-spacing: 3px;
+		margin-top:30px;
+
+	}
+	
+	}
+
+}
+

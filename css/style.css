@@ -227,9 +227,19 @@ body {
   margin: auto;
 }
 
+.separador {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  font-family: "Roboto";
+  font-size: 15px;
+  color: #cdcdcd;
+  letter-spacing: 2px;
+}
+
 #catalogo2 {
   display: flex;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 #catalogo2 .anteojo {
   flex: 1;
@@ -241,8 +251,79 @@ body {
 }
 #catalogo2 .texto-anteojo h2 {
   text-transform: uppercase;
-  color: steelblue;
-  margin-top: 10px;
+  color: #8db3d3;
+  margin-top: 20px;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+#catalogo2 .texto-anteojo h3 {
+  margin-top: 20px;
+  font-weight: bold;
+  font-family: "roboto 300";
+}
+#catalogo2 .texto-anteojo h4 {
+  margin-top: 20px;
+  color: #999999;
+}
+
+#descripcion {
+  display: flex;
+  margin-top: 40px;
+}
+#descripcion article {
+  flex: 1;
+}
+#descripcion article h2 {
+  margin-top: 50px;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 2px;
+}
+#descripcion article p {
+  margin-top: 30px;
+  line-height: 150%;
+  color: #999999;
+}
+#descripcion div {
+  flex: 1;
+  margin-top: 30px;
+}
+#descripcion div img {
+  margin-left: 10px;
+}
+
+#imagen-nena {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 15px;
+}
+#imagen-nena div {
+  position: absolute;
+}
+#imagen-nena div h3 {
+  color: #e6e6e6;
+  opacity: 0.8;
+  font-size: 20px;
+  font-family: "roboto";
+  letter-spacing: 3px;
+}
+#imagen-nena div h2 {
+  color: white;
+  font-size: 40px;
+  margin-top: 30px;
+  font-weight: bold;
+  font-family: "roboto 700";
+}
+#imagen-nena div h4 {
+  color: #e6e6e6;
+  opacity: 0.8;
+  font-size: 20px;
+  font-family: "roboto";
+  letter-spacing: 3px;
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
