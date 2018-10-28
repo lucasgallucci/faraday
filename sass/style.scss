@@ -209,35 +209,22 @@ body{
 
 
 
-#elemento-merge{
-	.merge{
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		max-width: 692px;
-		
-		div{
-			margin: auto;
-		}
 
-		
-	
-	}
-}
 
 .separador{
 	display: flex;
 	justify-content: center;
 	margin-top: 40px;
 	font-family: "Roboto";
-	font-size: 15px;
+	font-size: 13px;
 	color: lighten($font-color,60%);
 	letter-spacing: 2px;
+	margin-bottom: 40px;
 }
 
 #catalogo2 {
 	display: flex;
-	margin-top: 50px;
+	
 
 	
 
@@ -267,6 +254,7 @@ body{
 			margin-top: 20px;
 			font-weight: bold;
 			font-family: "roboto 300";
+			color: black;
 
 
 		}
@@ -296,16 +284,20 @@ body{
 			font-size: 20px;
 			font-family: $font-titles;
 			letter-spacing: 2px;
+			color: black;
 
 
 
 
 		}
 
-		p{
-			margin-top: 30px;
+		.texto-parrafo{
+			margin-top: 20px;
 			line-height: 150%;
 			color: lighten(black, 60%);
+			font-size: 13px;
+			letter-spacing: 1px;
+
 
 		}
 	}
@@ -363,4 +355,156 @@ body{
 	}
 
 }
+
+#textoparrafo{
+	display: flex;
+
+
+
+	article{
+		flex: 1;
+		padding: 20px;
+
+		h2{
+			font-weight: bold;
+			color: black;
+			font-family: "roboto 300";
+			font-size: 20p;
+		}
+
+		a{
+		display: inline-block;
+		margin-top: 30px;
+		text-decoration: none;
+		color: steelblue;
+		font-size: 10px;
+		letter-spacing: 1px; 
+		}
+
+		.texto-parrafo{
+			margin-top: 30px;
+			line-height: 200%;
+			color: lighten(black, 60%);
+			font-size: 13px;
+			letter-spacing: 1px;
+
+
+		}
+
+
+	}
+
+}
+
+#penultimo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+
+	article{
+		display: flex;
+		flex: 1;
+		padding: 20px;
+		justify-content: center;
+		align-items: center;
+		
+
+		h3{
+			position: absolute;
+			color: white;
+			font-family: "roboto 300";
+			}
+
+					
+
+
+			
+
+	}
+
+
+}
+
+#ultimo{
+	display: flex;
+	
+
+	div{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		flex: 1;
+		background: rgb(148,160,176);
+		margin: 20px;
+		max-width: 280px;
+		color: white;
+		letter-spacing: 2px;
+
+			&:first-child{
+				background: rgb(183,188,194);
+			}
+
+			&:last-child{
+				background: rgb(209,196,180);
+			}
+
+
+
+
+		h3{
+			padding: 10px;
+			font-size: 10px;
+			margin-top: 20px;
+			font-family: roboto;
+		}
+
+		h2{
+			padding: 10px;
+			font-size: 20px;
+			font-family: "roboto 300";
+		}
+
+		h4{
+			padding: 10px;
+			font-size: 10px;
+			margin-bottom: 20px;
+			font-family: roboto;
+		}
+
+		
+
+
+	}
+}
+
+#footer{
+	display: flex;
+
+	.contenedor-footer{
+		max-width: 1200px;
+		display: flex;
+		
+		div{
+			flex: 1;
+		}
+	}
+
+
+}
+
+#primer-footer{
+	display: flex;
+	ul{
+		flex: 1;
+	}
+}
+
+
+
+
+
+
+
 

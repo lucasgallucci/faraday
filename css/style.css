@@ -217,29 +217,19 @@ body {
   padding-left: 50px;
 }
 
-#elemento-merge .merge {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 692px;
-}
-#elemento-merge .merge div {
-  margin: auto;
-}
-
 .separador {
   display: flex;
   justify-content: center;
   margin-top: 40px;
   font-family: "Roboto";
-  font-size: 15px;
+  font-size: 13px;
   color: #cdcdcd;
   letter-spacing: 2px;
+  margin-bottom: 40px;
 }
 
 #catalogo2 {
   display: flex;
-  margin-top: 50px;
 }
 #catalogo2 .anteojo {
   flex: 1;
@@ -260,6 +250,7 @@ body {
   margin-top: 20px;
   font-weight: bold;
   font-family: "roboto 300";
+  color: black;
 }
 #catalogo2 .texto-anteojo h4 {
   margin-top: 20px;
@@ -279,11 +270,14 @@ body {
   font-size: 20px;
   font-family: "Playfair Display", serif;
   letter-spacing: 2px;
+  color: black;
 }
-#descripcion article p {
-  margin-top: 30px;
+#descripcion article .texto-parrafo {
+  margin-top: 20px;
   line-height: 150%;
   color: #999999;
+  font-size: 13px;
+  letter-spacing: 1px;
 }
 #descripcion div {
   flex: 1;
@@ -324,6 +318,110 @@ body {
   font-family: "roboto";
   letter-spacing: 3px;
   margin-top: 30px;
+}
+
+#textoparrafo {
+  display: flex;
+}
+#textoparrafo article {
+  flex: 1;
+  padding: 20px;
+}
+#textoparrafo article h2 {
+  font-weight: bold;
+  color: black;
+  font-family: "roboto 300";
+  font-size: 20p;
+}
+#textoparrafo article a {
+  display: inline-block;
+  margin-top: 30px;
+  text-decoration: none;
+  color: steelblue;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+#textoparrafo article .texto-parrafo {
+  margin-top: 30px;
+  line-height: 200%;
+  color: #999999;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+#penultimo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#penultimo article {
+  display: flex;
+  flex: 1;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+#penultimo article h3 {
+  position: absolute;
+  color: white;
+  font-family: "roboto 300";
+}
+
+#ultimo {
+  display: flex;
+}
+#ultimo div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  background: #94a0b0;
+  margin: 20px;
+  max-width: 280px;
+  color: white;
+  letter-spacing: 2px;
+}
+#ultimo div:first-child {
+  background: #b7bcc2;
+}
+#ultimo div:last-child {
+  background: #d1c4b4;
+}
+#ultimo div h3 {
+  padding: 10px;
+  font-size: 10px;
+  margin-top: 20px;
+  font-family: roboto;
+}
+#ultimo div h2 {
+  padding: 10px;
+  font-size: 20px;
+  font-family: "roboto 300";
+}
+#ultimo div h4 {
+  padding: 10px;
+  font-size: 10px;
+  margin-bottom: 20px;
+  font-family: roboto;
+}
+
+#footer {
+  display: flex;
+}
+#footer .contenedor-footer {
+  max-width: 1200px;
+  display: flex;
+}
+#footer .contenedor-footer div {
+  flex: 1;
+}
+
+#primer-footer {
+  display: flex;
+}
+#primer-footer ul {
+  flex: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
