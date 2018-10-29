@@ -62,6 +62,14 @@ body {
   max-width: 100%;
 }
 
+.texto-parrafos {
+  margin-top: 20px;
+  line-height: 150%;
+  color: #999999;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
 .contenedor {
   max-width: 1200px;
   margin: auto;
@@ -221,11 +229,11 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 40px;
+  margin-bottom: 40px;
   font-family: "Roboto";
   font-size: 13px;
   color: #cdcdcd;
   letter-spacing: 2px;
-  margin-bottom: 40px;
 }
 
 #catalogo2 {
@@ -265,19 +273,12 @@ body {
   flex: 1;
 }
 #descripcion article h2 {
-  margin-top: 50px;
+  margin-top: 30px;
   font-weight: bold;
   font-size: 20px;
   font-family: "Playfair Display", serif;
   letter-spacing: 2px;
   color: black;
-}
-#descripcion article .texto-parrafo {
-  margin-top: 20px;
-  line-height: 150%;
-  color: #999999;
-  font-size: 13px;
-  letter-spacing: 1px;
 }
 #descripcion div {
   flex: 1;
@@ -320,39 +321,33 @@ body {
   margin-top: 30px;
 }
 
-#textoparrafo {
+#parrafo-imagen {
   display: flex;
 }
-#textoparrafo article {
+#parrafo-imagen article {
+  max-width: 80%;
   flex: 1;
   padding: 20px;
 }
-#textoparrafo article h2 {
+#parrafo-imagen article h2 {
   font-weight: bold;
+  font-family: "Roboto 300";
+  font-size: 20px;
   color: black;
-  font-family: "roboto 300";
-  font-size: 20p;
 }
-#textoparrafo article a {
+#parrafo-imagen article p {
+  line-height: 200%;
+}
+#parrafo-imagen article a {
   display: inline-block;
   margin-top: 30px;
   text-decoration: none;
   color: steelblue;
-  font-size: 10px;
-  letter-spacing: 1px;
-}
-#textoparrafo article .texto-parrafo {
-  margin-top: 30px;
-  line-height: 200%;
-  color: #999999;
   font-size: 13px;
-  letter-spacing: 1px;
 }
 
 #penultimo {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 #penultimo article {
   display: flex;
@@ -361,10 +356,12 @@ body {
   justify-content: center;
   align-items: center;
 }
-#penultimo article h3 {
+#penultimo article a {
+  display: inline-block;
   position: absolute;
+  text-decoration: none;
   color: white;
-  font-family: "roboto 300";
+  font-family: "Roboto 300";
 }
 
 #ultimo {
@@ -375,10 +372,10 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  max-width: 280px;
+  margin: 20px;
   flex: 1;
   background: #94a0b0;
-  margin: 20px;
-  max-width: 280px;
   color: white;
   letter-spacing: 2px;
 }
@@ -389,21 +386,21 @@ body {
   background: #d1c4b4;
 }
 #ultimo div h3 {
-  padding: 10px;
+  margin-top: 22px;
+  padding: 11px;
   font-size: 10px;
-  margin-top: 20px;
-  font-family: roboto;
+  font-family: "Roboto";
 }
 #ultimo div h2 {
-  padding: 10px;
+  font-family: "Roboto 300";
   font-size: 20px;
-  font-family: "roboto 300";
+  padding: 11px;
 }
 #ultimo div h4 {
-  padding: 10px;
+  margin-bottom: 22px;
+  padding: 11px;
   font-size: 10px;
-  margin-bottom: 20px;
-  font-family: roboto;
+  font-family: "Roboto";
 }
 
 #footer {
@@ -412,16 +409,74 @@ body {
 #footer .contenedor-footer {
   max-width: 1200px;
   display: flex;
+  margin: auto;
 }
 #footer .contenedor-footer div {
+  flex: 2;
+}
+#footer .contenedor-footer div:first-child {
   flex: 1;
 }
 
 #primer-footer {
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 #primer-footer ul {
   flex: 1;
+  padding: 40px;
+}
+#primer-footer ul li {
+  padding: 8px;
+  width: 96px;
+}
+#primer-footer ul li a {
+  font-size: 15px;
+  color: black;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+#primer-footer ul li a h2, #primer-footer ul li a h3, #primer-footer ul li a h4, #primer-footer ul li a h5, #primer-footer ul li a h6 {
+  font-size: 10px;
+  font-family: "Roboto";
+  color: #666666;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+#segundo-footer {
+  width: 400px;
+}
+
+#tercer-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+#tercer-footer form {
+  margin-bottom: 32px;
+}
+#tercer-footer form .far {
+  position: relative;
+  right: 32px;
+}
+#tercer-footer h2, #tercer-footer h3 {
+  padding-bottom: 16px;
+  letter-spacing: 2px;
+  color: black;
+}
+#tercer-footer section {
+  display: flex;
+  justify-content: space-between;
+  width: 166px;
+}
+#tercer-footer section a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 30px;
+  color: #666666;
 }
 
 /*# sourceMappingURL=style.css.map */
