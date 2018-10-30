@@ -58,6 +58,61 @@ body {
   color: #343434;
 }
 
+@keyframes anim-fb {
+  40% {
+    color: #5f7ec1;
+  }
+  80% {
+    color: #3f5fa3;
+  }
+  100% {
+    color: #3b5998;
+  }
+}
+@keyframes anim-tw {
+  40% {
+    color: #0b76b8;
+  }
+  80% {
+    color: #0f9bf1;
+  }
+  100% {
+    color: #1da1f2;
+  }
+}
+@keyframes anim-pt {
+  40% {
+    color: #f51c34;
+  }
+  80% {
+    color: #cc091e;
+  }
+  100% {
+    color: #bd081c;
+  }
+}
+@keyframes anim-ig {
+  40% {
+    color: #841c6e;
+  }
+  80% {
+    color: #b62798;
+  }
+  100% {
+    color: #c32aa3;
+  }
+}
+@keyframes anim-ml {
+  40% {
+    color: #ffce50;
+  }
+  80% {
+    color: #ffbd12;
+  }
+  100% {
+    color: #ffb903;
+  }
+}
 .img-responsive {
   max-width: 100%;
 }
@@ -470,13 +525,43 @@ body {
 #tercer-footer section {
   display: flex;
   justify-content: space-between;
-  width: 166px;
+  width: 196px;
 }
 #tercer-footer section a {
-  display: inline-block;
   text-decoration: none;
   font-size: 30px;
   color: #666666;
+  transition: 1s;
+}
+#tercer-footer section a:hover .fa-facebook-f {
+  color: #3b5998;
+  animation-name: anim-fb;
+  animation-duration: 2s;
+  transform: scale(1.4);
+}
+#tercer-footer section a:hover .fa-twitter {
+  color: #1da1f2;
+  animation-name: anim-tw;
+  animation-duration: 2s;
+  transform: scale(1.4);
+}
+#tercer-footer section a:hover .fa-pinterest-p {
+  color: #bd081c;
+  animation-name: anim-pt;
+  animation-duration: 2s;
+  transform: scale(1.4);
+}
+#tercer-footer section a:hover .fa-instagram {
+  color: #c32aa3;
+  animation-name: anim-ig;
+  animation-duration: 2s;
+  transform: scale(1.4);
+}
+#tercer-footer section a:hover .fa-envelope {
+  color: #ffb903;
+  animation-name: anim-ml;
+  animation-duration: 2s;
+  transform: scale(1.4);
 }
 
 /*# sourceMappingURL=style.css.map */

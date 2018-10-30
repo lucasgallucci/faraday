@@ -12,6 +12,80 @@ body{
 	color: $font-color;
 }
 
+@keyframes anim-fb{
+
+	40%{ 
+		color: lighten(rgb(59, 89, 152), 15%);
+	}
+
+	80%{
+		color: lighten(rgb(59, 89, 152), 3%);
+	}
+
+	100%{
+		color: rgb(59, 89, 152);
+	}
+}
+
+@keyframes anim-tw{
+
+	40%{ 
+		color: darken(rgb(29, 161, 242), 15%);
+	}
+
+	80%{
+		color: darken(rgb(29, 161, 242), 3%);
+	}
+
+	100%{
+		color: rgb(29, 161, 242);
+	}
+}
+
+@keyframes anim-pt{
+
+	40%{ 
+		color: lighten(rgb(189, 8, 28), 15%);
+	}
+
+	80%{
+		color: lighten(rgb(189, 8, 28), 3%);
+	}
+
+	100%{
+		color: rgb(189, 8, 28);
+	}
+}
+
+@keyframes anim-ig{
+
+	40%{ 
+		color: darken(rgb(195, 42, 163), 15%);
+	}
+
+	80%{
+		color: darken(rgb(195, 42, 163), 3%);
+	}
+
+	100%{
+		color: rgb(195, 42, 163);
+	}
+}
+
+@keyframes anim-ml{
+
+	40%{ 
+		color: lighten(rgb(255, 185, 3), 15%);
+	}
+
+	80%{
+		color: lighten(rgb(255, 185, 3), 3%);
+	}
+
+	100%{
+		color: rgb(255, 185, 3);
+	}
+}
 .img-responsive{
 	max-width: 100%;
 }
@@ -530,15 +604,48 @@ article{
      section{
            display: flex;
            justify-content: space-between;
-           width: 166px;
+           width: 196px;
            
        a{
-     	  display: inline-block;
-          text-decoration: none;
+     	  text-decoration: none;
           font-size: 30px;
-          color: lighten(black, 40%)
+          color: lighten(black, 40%);
+          transition: 1s;
 
-          
+          &:hover .fa-facebook-f{
+          	color: rgb(59, 89, 152);
+          	animation-name: anim-fb;
+          	animation-duration: 2s;
+          	transform: scale(1.4);
+          }
+
+          &:hover .fa-twitter{
+          	color: rgb(29, 161, 242);
+          	animation-name: anim-tw;
+          	animation-duration: 2s;
+          	transform: scale(1.4);
+          }
+
+          &:hover .fa-pinterest-p{
+          	color: rgb(189, 8, 28);
+          	animation-name: anim-pt;
+          	animation-duration: 2s;
+          	transform: scale(1.4);
+          }
+
+          &:hover .fa-instagram{
+          	color: rgb(195, 42, 163);
+          	animation-name: anim-ig;
+          	animation-duration: 2s;
+          	transform: scale(1.4);
+          }
+
+          &:hover .fa-envelope{
+          	color: rgb(255, 185, 3);
+          	animation-name: anim-ml;
+          	animation-duration: 2s;
+          	transform: scale(1.4);
+          }
 
          }
 
