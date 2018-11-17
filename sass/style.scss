@@ -1,11 +1,16 @@
 
-@import "reset";
+//@import "reset";
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,700');
 
 $font-titles: 'Playfair Display', serif;
 $font-color: #343434;
+$font-color2: #0077FF;
 
-
+$color1: rgb(59, 89, 152);
+$color2: rgb(29, 161, 242);
+$color3: rgb(189, 8, 28);
+$color4: rgb(195, 42, 163);
+$color5: rgb(255, 185, 3);
 
 body{
 	font-family: Roboto, sans-serif;
@@ -15,77 +20,78 @@ body{
 @keyframes anim-fb{
 
 	40%{ 
-		color: lighten(rgb(59, 89, 152), 15%);
+		color: lighten($color1, 15%);
 	}
 
 	80%{
-		color: lighten(rgb(59, 89, 152), 3%);
+		color: lighten($color1, 3%);
 	}
 
 	100%{
-		color: rgb(59, 89, 152);
+		color: $color1;
 	}
 }
 
 @keyframes anim-tw{
 
 	40%{ 
-		color: darken(rgb(29, 161, 242), 15%);
+		color: darken($color2, 15%);
 	}
 
 	80%{
-		color: darken(rgb(29, 161, 242), 3%);
+		color: darken($color2, 3%);
 	}
 
 	100%{
-		color: rgb(29, 161, 242);
+		color: $color2;
 	}
 }
 
 @keyframes anim-pt{
 
 	40%{ 
-		color: lighten(rgb(189, 8, 28), 15%);
+		color: lighten($color3, 15%);
 	}
 
 	80%{
-		color: lighten(rgb(189, 8, 28), 3%);
+		color: lighten($color3, 3%);
 	}
 
 	100%{
-		color: rgb(189, 8, 28);
+		color: $color3;
 	}
 }
 
 @keyframes anim-ig{
 
 	40%{ 
-		color: darken(rgb(195, 42, 163), 15%);
+		color: darken($color4, 15%);
 	}
 
 	80%{
-		color: darken(rgb(195, 42, 163), 3%);
+		color: darken($color4, 3%);
 	}
 
 	100%{
-		color: rgb(195, 42, 163);
+		color: $color4;
 	}
 }
 
 @keyframes anim-ml{
 
 	40%{ 
-		color: lighten(rgb(255, 185, 3), 15%);
+		color: lighten($color5, 15%);
 	}
 
 	80%{
-		color: lighten(rgb(255, 185, 3), 3%);
+		color: lighten($color5, 3%);
 	}
 
 	100%{
-		color: rgb(255, 185, 3);
+		color: $color5;
 	}
 }
+
 .img-responsive{
 	max-width: 100%;
 }
@@ -155,8 +161,27 @@ body{
 	}
 }
 
-
-#main-nav{
+#barra-principal{
+	background: none;
+	border: none;
+	box-sizing: border-box;
+    margin-bottom: 0px;
+    padding-top: 16px;
+  .container{
+	display: flex;
+    justify-content: center;
+   }
+  ul{
+   box-shadow: none;
+   	li{
+      a{
+  	   background: none;
+  		}
+  	}
+  }
+  
+}
+/*#main-nav{
 	margin-top: 40px;
 	ul{
 		display: flex;
@@ -175,7 +200,7 @@ body{
 			}
 		}
 	}
-}
+}*/
 
 
 .divider{
@@ -191,15 +216,43 @@ body{
 	display: flex;
 
 	nav{
-		flex: 2;
+		flex: 1;
+		@media (max-width: 600px){
+          flex: 2;
+		}
 	}
 
 	main{
 		flex: 8;
 	}
 }
+#menu-lateral{
+	background: none;
+	border: none;
+     h4{
+	  text-transform: uppercase;
+	  margin-bottom: 10px;
+	  color: lighten($font-color, 40%);
+	}
+	
+	ul{
+       a{
+         text-decoration: none;
+	     color: $font-color;
+	     background: none;
+        }
+	   .dp{
+	   	color: $font-color2;
+	    font-weight: 700;
+	   }
+	     .fw{
+			text-transform: uppercase;
+			color: black;
+		}
 
-#nav-aside{
+   }
+}
+/*#nav-aside{
 
 	h4{
 		text-transform: uppercase;
@@ -237,10 +290,11 @@ body{
 			text-transform: uppercase;
 		}
 	}
-}
+}*/
 
 #main-header{
 	position: relative;
+	
 }
 
 .texto{
@@ -261,6 +315,15 @@ body{
     	text-transform: uppercase;
     	margin: 15px 0;
     	text-shadow: 0 0 4px rgba(0,0,0,0.5);
+    	@media (max-width: 950px){
+    		font-size: 16px;
+    	}
+    	@media (max-width: 800px){
+    			font-size: 10px;
+    		}
+    		@media (max-width: 600px){
+    			display: none;
+    		}
     }
 
     h2{
@@ -269,8 +332,21 @@ body{
     	color: white;
     	letter-spacing: 2px;
     	text-shadow: 0 0 4px rgba(0,0,0,0.5);
+    	@media (max-width: 950px){
+    		font-size: 32px;
+    	}
     	&.small{
     		font-size: 30px;
+    		@media (max-width: 950px){
+    			font-size: 24px;
+    		}
+    		@media (max-width: 800px){
+    			font-size: 16px;
+    		}
+
+    		@media (max-width: 700px){
+    			display: none;
+    		}
     	}
     }
 }
@@ -290,10 +366,6 @@ body{
 	}
 }
 
-
-
-
-
 .separador{
 	display: flex;
 	justify-content: center;
@@ -307,14 +379,19 @@ body{
 
 #catalogo2 {
 	display: flex;
-	
-
-	.anteojo {
-		flex:1;
+	@media (max-width: 800px){
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		}
+		article{
+			flex: 1;
+            @media (max-width: 800px){
+            	max-width: 300px;
+            }
 	}
-
-
-	.texto-anteojo {
+	
+        .texto-anteojo {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -325,20 +402,28 @@ body{
 			margin-top: 20px;
 			letter-spacing: 2px;
 			font-size: 12px;
-
+			@media (max-width: 650px){
+				font-size: 11px;
+			}
 		}
+
 		h3{
 			margin-top: 20px;
 			font-weight: bold;
 			font-family: "roboto 300";
 			color: black;
-
-
+			@media (max-width: 650px){
+				font-size: 18px;
+			}
 		}
-
-		h4{
+         
+         h4{
+         	text-transform: uppercase;
 			margin-top: 20px;
 			color: lighten(black, 60%);
+			@media (max-width: 650px){
+				font-size: 16px;
+			}
 		}
 		
 
@@ -350,10 +435,22 @@ body{
 #descripcion{
 	display: flex;
 	margin-top: 40px;
+	@media (max-width: 800px){
+		flex-direction: column;
+		align-items: center;
+	}
+	img{
+		@media (max-width: 800px){
+			display: none;
+		}
+	}
 
 	article{
 		flex: 1;
 		
+        @media (max-width: 800px){
+			flex: 3;
+		}
 
 		h2{
 			margin-top: 30px;
@@ -362,10 +459,12 @@ body{
 			font-family: $font-titles;
 			letter-spacing: 2px;
             color: black;
+            @media (max-width: 800px){
+			  letter-spacing: 0px;
+		    }
+            
          }
-
-	
-	}
+     }
 
 	div{
 		flex: 1;
@@ -396,6 +495,12 @@ body{
 		font-size: 20px;
 		font-family: "roboto";
 		letter-spacing: 3px;
+		@media (max-width: 780px){
+			font-size: 16px;
+		}
+		@media (max-width: 780px){
+			font-size: 13px;
+		}
 	}
 
 	h2{
@@ -403,8 +508,14 @@ body{
 		font-size: 40px;
 		margin-top: 30px;
 		font-weight: bold;
-		font-family: "roboto 700"
-
+		font-family: "roboto 700";
+		@media (max-width: 780px){
+			font-size: 32px;
+		}
+		@media (max-width: 780px){
+			font-size: 24px;
+		}
+        
 	}
 
 	h4{
@@ -414,7 +525,12 @@ body{
 		font-family: "roboto";
 		letter-spacing: 3px;
 		margin-top:30px;
-
+        @media (max-width: 780px){
+			font-size: 16px;
+		}
+		@media (max-width: 780px){
+			font-size: 13px;
+		}
 	}
 	
 	}
@@ -423,21 +539,43 @@ body{
 
 #parrafo-imagen{
 	display: flex;
+	@media (max-width: 670px){
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 	
      article{ 
-   	       max-width: 80%;
+   	       
            flex: 1;
            padding: 20px;
+           @media (max-width: 670px){
+            max-width: 300px;
+           }
    	
       h2{
         font-weight: bold;
         font-family: "Roboto 300";
         font-size: 20px;
         color: black;
+        @media (max-width: 780px){
+        	font-size: 17px;
+        }
+        @media (max-width: 696px){
+        	font-size: 16px;
+        }
+        @media (max-width: 670px){
+        	font-size: 24px;
+        }
+        
+        
    	   }
 
    	   p{
    		line-height: 200%;
+   		@media (max-width: 670px){
+   			display: none;
+   		}
    	   }
 
        a{
@@ -446,6 +584,23 @@ body{
    		text-decoration: none;
    		color: steelblue;
    		font-size: 13px;
+   		@media (max-width: 670px){
+   			margin-top: 0px;
+   		}
+   		h3{
+   			@media (max-width: 780px){
+        	font-size: 26px;
+        }
+        @media (max-width: 780px){
+        	font-size: 23px;
+        }
+        @media (max-width: 580px){
+        	font-size: 20px;
+        }
+        @media (max-width: 580px){
+        	font-size: 16px;
+        }
+   		}
    	   }
 
      }
@@ -453,6 +608,11 @@ body{
 
 #penultimo{
 	display: flex;
+	@media (max-width: 800px){
+           display: flex;
+           flex-direction: column;
+
+	}
 	
 article{
 		display: flex;
@@ -460,6 +620,9 @@ article{
 		padding: 20px;
 		justify-content: center;
 	    align-items: center;
+	    @media (max-width: 800px){
+	    	max-width: 700px;
+	    }
 		
 		
 		a{
@@ -476,6 +639,9 @@ article{
 
 #ultimo{
 	display: flex;
+	@media (max-width: 880px){
+		display: none;
+	}
 
 	div{
 		display: flex;
@@ -520,97 +686,94 @@ article{
 	}
 }
 
-
-#footer{
-	display: flex;
-
-	.contenedor-footer{
-         max-width: 1200px;
-         display: flex;
-         margin: auto;
-
-         div{
-         	flex: 2;
-
-         	&:first-child{
-         		flex: 1;
-         	}
-         }
-	}
-}
-
-#primer-footer{
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	
-    ul{
-		flex: 1;
-		padding: 40px;
-		
-
-		li{
-			padding: 8px;
-			width: 96px;
-
-			a{  
-				
-				font-size: 15px;
-				color: black;
-				text-decoration: none;
-				letter-spacing: 2px;
-
-			 h2, h3, h4, h5, h6{
+footer{
+  ul{
+	 li{
+	   padding: 1px 0px;
+	   width: 96px;
+        a{  
+		 font-size: 15px;
+		 color: black;
+		 text-decoration: none;
+		 letter-spacing: 2px;
+		 &:hover{
+		 	text-decoration: none;
+		 	color: black;
+		 }
+          
+          h2, h3, h4, h5, h6{
 			 font-size: 10px;
 			 font-family: "Roboto";
 			 color: lighten(black, 40%);
 		     text-decoration: none;
 		     letter-spacing: 1px;
-
-
-			 }
-			}
-			
-		 }
-	}
+		    }
+	    }
+	  }
+	}	
 }
 
-#segundo-footer{
-	width: 400px;
-}
 
 #tercer-footer{
-     display: flex;
-     flex-direction: column;
-     align-items: flex-start;
-     margin-top: 40px;
+     
 
     form{
      	  margin-bottom: 32px;
-
-        .far{
-     		position: relative;
-     		right: 32px;
      	}
-
-     }
      
-     h2, h3{
+     h2{
      	padding-bottom: 16px;
      	letter-spacing: 2px;
      	color: black;
+     	@media (max-width: 993px){
+     		font-size: 20px;
+
+     	}
+
+     }
+     h3{
+     	padding-bottom: 16px;
+     	letter-spacing: 2px;
+     	color: black;
+     	@media (max-width: 993px){
+     		font-size: 20px;
+            letter-spacing: 0px;
+     	}
+     	@media (max-width: 710px){
+     		font-size: 18px;
+     	}
+     	@media (max-width: 650px){
+     		font-size: 16px;
+     	}
+     	@media (max-width: 595px){
+     		font-size: 13px;
+     	}
+     	@media (max-width: 550px){
+     		display: none;
+     	}
+
      }
 
+
      section{
-           display: flex;
-           justify-content: space-between;
-           width: 196px;
-           
-       a{
+           @media (max-width: 550px){
+                  display: flex;
+                  flex-direction: column;
+           }
+         a{
      	  text-decoration: none;
           font-size: 30px;
           color: lighten(black, 40%);
           transition: 1s;
+          @media (max-width: 755px){
+          	font-size: 24px;
+          }
+          @media (max-width: 630px){
+          	font-size: 20px;
+          }
+          @media (max-width: 548px){
+          	font-size: 20px;
+          }
 
           &:hover .fa-facebook-f{
           	color: rgb(59, 89, 152);
