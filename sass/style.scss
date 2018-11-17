@@ -573,9 +573,6 @@ body{
 
    	   p{
    		line-height: 200%;
-   		@media (max-width: 670px){
-   			display: none;
-   		}
    	   }
 
        a{
@@ -687,6 +684,7 @@ article{
 }
 
 footer{
+	
   ul{
 	 li{
 	   padding: 1px 0px;
