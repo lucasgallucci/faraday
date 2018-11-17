@@ -496,7 +496,7 @@ body {
 #parrafo-imagen {
   display: flex;
 }
-@media (max-width: 670px) {
+@media (max-width: 800px) {
   #parrafo-imagen {
     display: flex;
     flex-direction: column;
@@ -507,7 +507,7 @@ body {
   flex: 1;
   padding: 20px;
 }
-@media (max-width: 670px) {
+@media (max-width: 800px) {
   #parrafo-imagen article {
     max-width: 300px;
   }
@@ -587,7 +587,7 @@ body {
 }
 @media (max-width: 800px) {
   #penultimo article {
-    max-width: 700px;
+    max-width: 600px;
   }
 }
 #penultimo article a {
